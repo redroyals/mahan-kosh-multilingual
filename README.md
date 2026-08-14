@@ -34,6 +34,8 @@ The 23: Spanish, French, German, Portuguese, Italian, Chinese, Arabic, Urdu, Rus
 
 English and Hindi are the careful spine. Everything after that is convenience text — useful for access, **not** a scholarly edition. Do not quote a machine translation as if Bhai Kahan Singh wrote it in Danish.
 
+Numbers and the Google-Translate A/B: [`QUALITY.md`](QUALITY.md).
+
 A missing Gurmukhi body is not “translation failed.” The headword could not be joined to original prose. The viewer says so instead of inventing a definition.
 
 ## Files

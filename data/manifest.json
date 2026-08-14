@@ -12,10 +12,10 @@
       "resolved_pct": 100.0,
       "exact_plus_fuzzy_pct": 100.0,
       "counts": {
-        "entry": 64207,
+        "entry": 64217,
         "exact_grouped": 5,
         "exact": 4,
-        "page-fallback": 2
+        "page-fallback": 1
       },
       "pipeline": "per-entry"
     },
@@ -23,10 +23,10 @@
       "resolved_pct": 100.0,
       "exact_plus_fuzzy_pct": 100.0,
       "counts": {
-        "entry": 64207,
+        "entry": 64217,
         "exact_grouped": 5,
         "exact": 4,
-        "page-fallback": 2
+        "page-fallback": 1
       },
       "pipeline": "per-entry"
     },
@@ -34,10 +34,10 @@
       "resolved_pct": 100.0,
       "exact_plus_fuzzy_pct": 100.0,
       "counts": {
-        "entry": 64207,
+        "entry": 64217,
         "exact_grouped": 5,
         "exact": 4,
-        "page-fallback": 2
+        "page-fallback": 1
       },
       "pipeline": "per-entry"
     },
@@ -45,10 +45,10 @@
       "resolved_pct": 100.0,
       "exact_plus_fuzzy_pct": 100.0,
       "counts": {
-        "entry": 64207,
+        "entry": 64217,
         "exact_grouped": 5,
         "exact": 4,
-        "page-fallback": 2
+        "page-fallback": 1
       },
       "pipeline": "per-entry"
     },
@@ -56,10 +56,10 @@
       "resolved_pct": 100.0,
       "exact_plus_fuzzy_pct": 100.0,
       "counts": {
-        "entry": 64209,
+        "entry": 64217,
         "exact": 2,
         "exact_grouped": 5,
-        "page-fallback": 2
+        "page-fallback": 1
       },
       "pipeline": "per-entry"
     },
@@ -67,10 +67,10 @@
       "resolved_pct": 100.0,
       "exact_plus_fuzzy_pct": 100.0,
       "counts": {
-        "entry": 64209,
+        "entry": 64217,
         "exact": 3,
         "exact_grouped": 4,
-        "page-fallback": 2
+        "page-fallback": 1
       },
       "pipeline": "per-entry"
     },
@@ -78,10 +78,10 @@
       "resolved_pct": 100.0,
       "exact_plus_fuzzy_pct": 100.0,
       "counts": {
-        "entry": 64210,
+        "entry": 64217,
         "exact_grouped": 5,
         "exact": 1,
-        "page-fallback": 2
+        "page-fallback": 1
       },
       "pipeline": "per-entry"
     },
@@ -89,7 +89,7 @@
       "resolved_pct": 100.0,
       "exact_plus_fuzzy_pct": 100.0,
       "counts": {
-        "entry": 64210,
+        "entry": 64217,
         "exact_grouped": 7,
         "page-fallback": 1
       },
@@ -99,8 +99,8 @@
       "resolved_pct": 100.0,
       "exact_plus_fuzzy_pct": 100.0,
       "counts": {
-        "entry": 64192,
-        "page-fallback": 15,
+        "entry": 64217,
+        "page-fallback": 1,
         "exact": 6,
         "exact_grouped": 5
       },
@@ -110,8 +110,8 @@
       "resolved_pct": 100.0,
       "exact_plus_fuzzy_pct": 100.0,
       "counts": {
-        "entry": 64204,
-        "page-fallback": 3,
+        "entry": 64218,
+        "page-fallback": 0,
         "exact_grouped": 7,
         "exact": 3,
         "native-anchor": 1
@@ -120,14 +120,14 @@
     },
     "gujarati": {
       "resolved_pct": 100.0,
-      "exact_plus_fuzzy_pct": 99.9,
+      "exact_plus_fuzzy_pct": 100.0,
       "counts": {
-        "entry": 64153,
+        "entry": 64217,
         "exact": 27,
         "exact_grouped": 27,
         "native-anchor": 7,
         "native_grouped": 2,
-        "page-fallback": 2
+        "page-fallback": 1
       },
       "pipeline": "per-entry"
     },
@@ -135,9 +135,9 @@
       "resolved_pct": 100.0,
       "exact_plus_fuzzy_pct": 100.0,
       "counts": {
-        "entry": 64211,
+        "entry": 64218,
         "exact_grouped": 5,
-        "page-fallback": 2
+        "page-fallback": 0
       },
       "pipeline": "per-entry"
     },
@@ -145,9 +145,9 @@
       "resolved_pct": 100.0,
       "exact_plus_fuzzy_pct": 100.0,
       "counts": {
-        "entry": 64208,
+        "entry": 64217,
         "exact_grouped": 7,
-        "page-fallback": 2,
+        "page-fallback": 1,
         "exact": 1
       },
       "pipeline": "per-entry"
@@ -156,9 +156,9 @@
       "resolved_pct": 100.0,
       "exact_plus_fuzzy_pct": 100.0,
       "counts": {
-        "entry": 64209,
+        "entry": 64217,
         "exact_grouped": 7,
-        "page-fallback": 2
+        "page-fallback": 1
       },
       "pipeline": "per-entry"
     },
@@ -166,10 +166,10 @@
       "resolved_pct": 100.0,
       "exact_plus_fuzzy_pct": 100.0,
       "counts": {
-        "entry": 64210,
+        "entry": 64217,
         "exact": 2,
         "exact_grouped": 4,
-        "page-fallback": 2
+        "page-fallback": 1
       },
       "pipeline": "per-entry"
     },
@@ -177,8 +177,8 @@
       "resolved_pct": 100.0,
       "exact_plus_fuzzy_pct": 100.0,
       "counts": {
-        "entry": 64187,
-        "page-fallback": 31
+        "entry": 64215,
+        "page-fallback": 3
       },
       "pipeline": "per-entry"
     },
@@ -186,17 +186,17 @@
       "resolved_pct": 100.0,
       "exact_plus_fuzzy_pct": 100.0,
       "counts": {
-        "entry": 64204,
-        "page-fallback": 14
+        "entry": 64214,
+        "page-fallback": 4
       },
       "pipeline": "per-entry"
     },
     "dutch": {
-      "resolved_pct": 99.9,
-      "exact_plus_fuzzy_pct": 99.9,
+      "resolved_pct": 100.0,
+      "exact_plus_fuzzy_pct": 100.0,
       "counts": {
-        "entry": 64182,
-        "page-fallback": 36
+        "entry": 64214,
+        "page-fallback": 4
       },
       "pipeline": "per-entry"
     },
@@ -204,8 +204,8 @@
       "resolved_pct": 100.0,
       "exact_plus_fuzzy_pct": 100.0,
       "counts": {
-        "entry": 64206,
-        "page-fallback": 12
+        "entry": 64214,
+        "page-fallback": 4
       },
       "pipeline": "per-entry"
     },
@@ -213,8 +213,8 @@
       "resolved_pct": 100.0,
       "exact_plus_fuzzy_pct": 100.0,
       "counts": {
-        "entry": 64209,
-        "page-fallback": 9
+        "entry": 64214,
+        "page-fallback": 4
       },
       "pipeline": "per-entry"
     },
@@ -222,8 +222,8 @@
       "resolved_pct": 100.0,
       "exact_plus_fuzzy_pct": 100.0,
       "counts": {
-        "entry": 64207,
-        "page-fallback": 11
+        "entry": 64214,
+        "page-fallback": 4
       },
       "pipeline": "per-entry"
     },
@@ -231,8 +231,8 @@
       "resolved_pct": 100.0,
       "exact_plus_fuzzy_pct": 100.0,
       "counts": {
-        "entry": 64208,
-        "page-fallback": 10
+        "entry": 64214,
+        "page-fallback": 4
       },
       "pipeline": "per-entry"
     },
@@ -240,8 +240,8 @@
       "resolved_pct": 100.0,
       "exact_plus_fuzzy_pct": 100.0,
       "counts": {
-        "entry": 64207,
-        "page-fallback": 11
+        "entry": 64214,
+        "page-fallback": 4
       },
       "pipeline": "per-entry"
     },
