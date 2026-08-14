@@ -1,0 +1,471 @@
+:root {
+  --paper: #faf6ee;
+  --ink: #1c1a16;
+  --ink-soft: #5c574c;
+  --gold: #9c7a2e;
+  --line: #ddd3bd;
+  --panel: #fffdf8;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Georgia", "Noto Serif", serif;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 1.2rem;
+  color: var(--ink-soft);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.topbar {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  border-bottom: 2px solid var(--gold);
+  background: var(--panel);
+}
+
+.topbar h1 {
+  font-size: 1.6rem;
+  margin: 0;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  font-style: italic;
+  margin-left: 0.6rem;
+}
+
+.privacy-badge {
+  font-family: system-ui, sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  color: #8a2c2c;
+  border: 1px solid #8a2c2c;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.layout {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  min-height: 0;
+}
+
+.sidebar {
+  border-right: 1px solid var(--line);
+  background: var(--panel);
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.mode-tabs {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.mode-tab {
+  flex: 1;
+  font-family: system-ui, sans-serif;
+  font-size: 0.85rem;
+  padding: 0.5rem 0.4rem;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: #fff;
+  cursor: pointer;
+}
+
+.mode-tab.active {
+  background: var(--gold);
+  color: #fff;
+  border-color: var(--gold);
+}
+
+.painti-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.4rem;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.painti-letter {
+  font-family: "Noto Sans Gurmukhi", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  padding: 0.6rem 0.3rem;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: #fff;
+  cursor: pointer;
+}
+
+.painti-letter:hover { border-color: var(--gold); background: #fbf3de; }
+
+.painti-letter-glyph { font-size: 1.4rem; }
+
+.painti-letter-count {
+  font-family: system-ui, sans-serif;
+  font-size: 0.65rem;
+  color: var(--ink-soft);
+}
+
+.browse-back {
+  align-self: flex-start;
+  font-family: system-ui, sans-serif;
+  font-size: 0.85rem;
+  background: none;
+  border: none;
+  color: var(--gold);
+  cursor: pointer;
+  padding: 0.3rem 0;
+  margin-bottom: 0.5rem;
+}
+
+.browse-results { margin-top: 0; }
+
+.page-break-marker {
+  position: sticky;
+  top: 0;
+  font-family: system-ui, sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  background: var(--panel);
+  padding: 0.3rem 0.6rem;
+  border-bottom: 1px solid var(--line);
+  z-index: 1;
+}
+
+.also-written {
+  font-family: system-ui, sans-serif;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--ink-soft);
+  margin-bottom: 0.6rem;
+}
+
+.alphabet-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.alphabet-letter {
+  font-family: "Noto Sans Gurmukhi", "Noto Sans Devanagari", "Noto Sans Bengali",
+    "Noto Sans Gujarati", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Arabic",
+    "Noto Sans", system-ui, sans-serif;
+  font-size: 0.95rem;
+  min-width: 1.9rem;
+  padding: 0.15rem 0.3rem;
+  border-radius: 4px;
+  border: 1px solid var(--line);
+  background: #fff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.alphabet-letter:hover { border-color: var(--gold); background: #fbf3de; }
+
+.search {
+  font-family: inherit;
+  font-size: 1.1rem;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+}
+
+.results {
+  margin-top: 0.75rem;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15rem;
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 0.6rem;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #eee3cc;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.result:hover { background: #f2ead6; }
+.result.active { background: #ecdfb8; }
+
+.result-headline {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.result .hw {
+  font-size: 1.15rem;
+  color: var(--gold);
+}
+
+.result .tr {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+/* Bold short gloss under the headword/transliteration line -- lets a
+   reader learn the word straight from the list, not just click through
+   entries one at a time to find out what each one means. */
+.result-gloss {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.muted { color: var(--ink-soft); }
+.small { font-size: 0.85rem; }
+
+.entry-panel {
+  padding: 2rem 3rem;
+  overflow-y: auto;
+}
+
+.entry-head {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.headword-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15rem;
+  line-height: 1.1;
+}
+
+.hw-roman-line {
+  margin-top: 0.3rem;
+}
+
+.hw-roman {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--ink-soft);
+}
+
+.hw-gurmukhi {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #000;
+}
+
+/* Phonetic symbols (ə ı ǝ ş ħ ã etc.) aren't reliably covered by every
+   system serif -- fall back through fonts with broader IPA coverage
+   before the generic serif. */
+.pronunciation {
+  font-family: "Charis SIL", "Gentium Plus", "Noto Serif", Georgia, serif;
+  font-size: 1.15rem;
+  color: var(--gold);
+  margin-top: 0.3rem;
+}
+
+.native-script-line {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-top: 0.3rem;
+}
+
+.native-script-text {
+  font-size: 1.2rem;
+  color: var(--ink-soft);
+}
+
+.gloss-line {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-top: 0.3rem;
+}
+
+.native-script-label {
+  font-family: system-ui, sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  opacity: 0.7;
+}
+
+.source-ref {
+  font-family: system-ui, sans-serif;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  margin-top: 0.4rem;
+}
+
+.lang-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.lang-switcher-sidebar {
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--line);
+  gap: 0.3rem;
+}
+
+.lang-switcher-sidebar .lang-btn {
+  font-size: 0.72rem;
+  padding: 0.25rem 0.55rem;
+}
+
+.lang-btn {
+  font-family: system-ui, sans-serif;
+  font-size: 0.8rem;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #fff;
+  cursor: pointer;
+}
+
+.lang-btn:hover { border-color: var(--gold); }
+.lang-btn.active {
+  background: var(--gold);
+  color: #fff;
+  border-color: var(--gold);
+}
+
+.definition-box {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  max-width: 60ch;
+}
+
+.definitions {
+  padding-left: 1.4rem;
+  font-style: italic;
+}
+
+.definitions li { margin-bottom: 0.6rem; }
+
+.hi-tr {
+  color: var(--ink-soft);
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.translated-text {
+  white-space: pre-wrap;
+  font-style: italic;
+}
+
+/* Gurmukhi is the original text, not a translation -- upright, not
+   italic, and needs a real Gurmukhi-covering font (system-ui/sans-serif
+   often renders Gurmukhi conjuncts/matras incorrectly or falls back to
+   tofu boxes). */
+.gurmukhi-text {
+  font-style: normal;
+  font-family: "Noto Sans Gurmukhi", "Noto Serif Gurmukhi", "Charis SIL", serif;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.align-badge {
+  display: inline-block;
+  font-family: system-ui, sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+  margin-top: 0.5rem;
+  background: #e7f2e0;
+  color: #3c6b2a;
+}
+
+.align-badge[data-quality="fuzzy"],
+.align-badge[data-quality="fuzzy_grouped"],
+.align-badge[data-quality="native-anchor"],
+.align-badge[data-quality="native_grouped"],
+.align-badge[data-quality="positional"] {
+  background: #fbf0d9;
+  color: #8a6a1a;
+}
+
+.align-badge[data-quality="page-fallback"] {
+  background: #fbe4e0;
+  color: #8a2c2c;
+}
+
+.page-fallback {
+  white-space: pre-wrap;
+  font-family: "Noto Sans Gurmukhi", "Georgia", serif;
+  font-size: 0.95rem;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 1rem;
+  max-width: 70ch;
+}
+
+.citation {
+  margin-top: 2rem;
+  font-family: system-ui, sans-serif;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  border-top: 1px solid var(--line);
+  padding-top: 0.75rem;
+}
+
+/* Clickable "See X" cross-reference inside a definition. Gold to match
+   the site's headword accent; only ever rendered when the target
+   headword actually exists (linkifySee in App.tsx), so it never
+   dead-ends. */
+.see-link {
+  color: var(--gold);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+.see-link:hover { color: #7a5e20; }

@@ -1,0 +1,258 @@
+{
+  "total_entries": 68150,
+  "live_entries": 64218,
+  "excluded_entries": 3932,
+  "core_languages": [
+    "gurmukhi",
+    "english",
+    "hindi"
+  ],
+  "aligned_languages": {
+    "spanish": {
+      "resolved_pct": 100.0,
+      "exact_plus_fuzzy_pct": 100.0,
+      "counts": {
+        "entry": 64207,
+        "exact_grouped": 5,
+        "exact": 4,
+        "page-fallback": 2
+      },
+      "pipeline": "per-entry"
+    },
+    "french": {
+      "resolved_pct": 100.0,
+      "exact_plus_fuzzy_pct": 100.0,
+      "counts": {
+        "entry": 64207,
+        "exact_grouped": 5,
+        "exact": 4,
+        "page-fallback": 2
+      },
+      "pipeline": "per-entry"
+    },
+    "german": {
+      "resolved_pct": 100.0,
+      "exact_plus_fuzzy_pct": 100.0,
+      "counts": {
+        "entry": 64207,
+        "exact_grouped": 5,
+        "exact": 4,
+        "page-fallback": 2
+      },
+      "pipeline": "per-entry"
+    },
+    "portuguese": {
+      "resolved_pct": 100.0,
+      "exact_plus_fuzzy_pct": 100.0,
+      "counts": {
+        "entry": 64207,
+        "exact_grouped": 5,
+        "exact": 4,
+        "page-fallback": 2
+      },
+      "pipeline": "per-entry"
+    },
+    "italian": {
+      "resolved_pct": 100.0,
+      "exact_plus_fuzzy_pct": 100.0,
+      "counts": {
+        "entry": 64209,
+        "exact": 2,
+        "exact_grouped": 5,
+        "page-fallback": 2
+      },
+      "pipeline": "per-entry"
+    },
+    "chinese": {
+      "resolved_pct": 100.0,
+      "exact_plus_fuzzy_pct": 100.0,
+      "counts": {
+        "entry": 64209,
+        "exact": 3,
+        "exact_grouped": 4,
+        "page-fallback": 2
+      },
+      "pipeline": "per-entry"
+    },
+    "arabic": {
+      "resolved_pct": 100.0,
+      "exact_plus_fuzzy_pct": 100.0,
+      "counts": {
+        "entry": 64210,
+        "exact_grouped": 5,
+        "exact": 1,
+        "page-fallback": 2
+      },
+      "pipeline": "per-entry"
+    },
+    "urdu": {
+      "resolved_pct": 100.0,
+      "exact_plus_fuzzy_pct": 100.0,
+      "counts": {
+        "entry": 64210,
+        "exact_grouped": 7,
+        "page-fallback": 1
+      },
+      "pipeline": "per-entry"
+    },
+    "russian": {
+      "resolved_pct": 100.0,
+      "exact_plus_fuzzy_pct": 100.0,
+      "counts": {
+        "entry": 64192,
+        "page-fallback": 15,
+        "exact": 6,
+        "exact_grouped": 5
+      },
+      "pipeline": "per-entry"
+    },
+    "bengali": {
+      "resolved_pct": 100.0,
+      "exact_plus_fuzzy_pct": 100.0,
+      "counts": {
+        "entry": 64204,
+        "page-fallback": 3,
+        "exact_grouped": 7,
+        "exact": 3,
+        "native-anchor": 1
+      },
+      "pipeline": "per-entry"
+    },
+    "gujarati": {
+      "resolved_pct": 100.0,
+      "exact_plus_fuzzy_pct": 99.9,
+      "counts": {
+        "entry": 64153,
+        "exact": 27,
+        "exact_grouped": 27,
+        "native-anchor": 7,
+        "native_grouped": 2,
+        "page-fallback": 2
+      },
+      "pipeline": "per-entry"
+    },
+    "tamil": {
+      "resolved_pct": 100.0,
+      "exact_plus_fuzzy_pct": 100.0,
+      "counts": {
+        "entry": 64211,
+        "exact_grouped": 5,
+        "page-fallback": 2
+      },
+      "pipeline": "per-entry"
+    },
+    "telugu": {
+      "resolved_pct": 100.0,
+      "exact_plus_fuzzy_pct": 100.0,
+      "counts": {
+        "entry": 64208,
+        "exact_grouped": 7,
+        "page-fallback": 2,
+        "exact": 1
+      },
+      "pipeline": "per-entry"
+    },
+    "persian": {
+      "resolved_pct": 100.0,
+      "exact_plus_fuzzy_pct": 100.0,
+      "counts": {
+        "entry": 64209,
+        "exact_grouped": 7,
+        "page-fallback": 2
+      },
+      "pipeline": "per-entry"
+    },
+    "japanese": {
+      "resolved_pct": 100.0,
+      "exact_plus_fuzzy_pct": 100.0,
+      "counts": {
+        "entry": 64210,
+        "exact": 2,
+        "exact_grouped": 4,
+        "page-fallback": 2
+      },
+      "pipeline": "per-entry"
+    },
+    "shahmukhi": {
+      "resolved_pct": 100.0,
+      "exact_plus_fuzzy_pct": 100.0,
+      "counts": {
+        "entry": 64187,
+        "page-fallback": 31
+      },
+      "pipeline": "per-entry"
+    },
+    "polish": {
+      "resolved_pct": 100.0,
+      "exact_plus_fuzzy_pct": 100.0,
+      "counts": {
+        "entry": 64204,
+        "page-fallback": 14
+      },
+      "pipeline": "per-entry"
+    },
+    "dutch": {
+      "resolved_pct": 99.9,
+      "exact_plus_fuzzy_pct": 99.9,
+      "counts": {
+        "entry": 64182,
+        "page-fallback": 36
+      },
+      "pipeline": "per-entry"
+    },
+    "swedish": {
+      "resolved_pct": 100.0,
+      "exact_plus_fuzzy_pct": 100.0,
+      "counts": {
+        "entry": 64206,
+        "page-fallback": 12
+      },
+      "pipeline": "per-entry"
+    },
+    "romanian": {
+      "resolved_pct": 100.0,
+      "exact_plus_fuzzy_pct": 100.0,
+      "counts": {
+        "entry": 64209,
+        "page-fallback": 9
+      },
+      "pipeline": "per-entry"
+    },
+    "czech": {
+      "resolved_pct": 100.0,
+      "exact_plus_fuzzy_pct": 100.0,
+      "counts": {
+        "entry": 64207,
+        "page-fallback": 11
+      },
+      "pipeline": "per-entry"
+    },
+    "hungarian": {
+      "resolved_pct": 100.0,
+      "exact_plus_fuzzy_pct": 100.0,
+      "counts": {
+        "entry": 64208,
+        "page-fallback": 10
+      },
+      "pipeline": "per-entry"
+    },
+    "danish": {
+      "resolved_pct": 100.0,
+      "exact_plus_fuzzy_pct": 100.0,
+      "counts": {
+        "entry": 64207,
+        "page-fallback": 11
+      },
+      "pipeline": "per-entry"
+    },
+    "gurmukhi": {
+      "resolved_pct": 93.74,
+      "exact_plus_fuzzy_pct": 93.74,
+      "counts": {
+        "original": 60196
+      },
+      "pipeline": "original-language body text",
+      "note": "Original Gurmukhi dictionary prose for each entry (not a translation). Coverage is partial by design: 60196 of 64218 live entries (93.74%). Remaining entries disclose a missing body in the site UI."
+    }
+  }
+}

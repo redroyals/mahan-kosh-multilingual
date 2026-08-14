@@ -1,0 +1,11 @@
+.DS_Store
+*.tmp
+.env
+.env.*
+__pycache__/
+*.pyc
+.claude/
+reports/
+site/node_modules/
+site/dist/
+reports/page_compare.html
