@@ -60,6 +60,19 @@ Treat ES…DA as convenience text. Do not cite Danish as Nabha.
 
 Shahmukhi is the weak method. Most of it is still English-MT. 28 holes were filled from Gurmukhi script conversion; that conversion is mechanical, not a human orthography.
 
+## Japanese (cleanup pass)
+
+Flash-Lite had left English `See`, duplicated sense lists, and ~560 rows with no kana/kanji (English or Hindi in the Japanese slot).
+
+After the cleanup (same English spine, Gemini Flash on the leftovers; numbers/letter-names written in Japanese):
+
+- Live Japanese rows with text: 64,217 / 64,218 (the one empty id has no English)
+- Leftover English `See`: **0**
+- Rows with no kana/kanji: **0**
+- `を参照` present on ~19k See-style rows
+
+Still machine Japanese. Not a human lexicon. The “never became Japanese” hole is closed.
+
 ## What “finished” still means
 
 1. Repair dirty English, then re-translate **only those ids**.
