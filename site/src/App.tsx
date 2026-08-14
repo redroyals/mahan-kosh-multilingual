@@ -846,8 +846,9 @@ export default function App() {
       }
       return (
         <p className="muted">
-          No original Gurmukhi body for this entry yet (about 93.7% of live entries have one).
-          English and other languages for this id still work.
+          No original Gurmukhi body for this entry (4,022 of 64,218 live ids).
+          The headword could not be joined without guessing. English and other
+          languages for this id still work.
         </p>
       );
     }

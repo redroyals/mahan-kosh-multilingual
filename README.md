@@ -25,7 +25,7 @@ If you can read a JSON file, you can build something.
 | What | Coverage | Notes |
 |---|---|---|
 | Gurmukhi headword | every live entry | Original lemma |
-| Gurmukhi body | **60,196 / 64,218 (93.74%)** | Original prose, **not** a translation. The rest is a real gap. |
+| Gurmukhi body | **60,196 / 64,218 (93.74%)** | Original prose. The other 4,022 are a join gap, not an error. |
 | English | ~100% | Punjabi University Patiala edition (2006–2011) |
 | Hindi | ~100% | From the English |
 | 23 other languages | ~100% | Machine translations of the English |
@@ -117,7 +117,7 @@ If you add a language or fix a body, open a pull request. Keep machine text labe
 ## Limits (read these)
 
 - Machine translations are unreviewed.
-- Gurmukhi body coverage stops at 93.74% on purpose. Do not invent the rest.
+- Gurmukhi body is **complete for every id we could join without guessing.** 4,022 live ids are listed in `data/unresolved.json`. They have a headword and English. They are not errors and not forgotten files. Do not invent Gurmukhi for them.
 - Headwords and English can still carry OCR scars. Treat this as a working digital edition, not a critical text.
 - Ids are this edition’s grid. They are not page numbers in every printed Mahan Kosh.
 

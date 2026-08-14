@@ -41,7 +41,7 @@ English is complete enough to search and to translate from. Residual scars remai
 
 - 60,196 rows, every one has `text`, `align: "original"`.
 - 5,651 carry a `lemma` when the recovered headword differs from `core.hw`.
-- ~4,022 live ids have no body. That is an unjoined headword, not a missing file. Do not invent the rest.
+- **4,022 live ids have no body by design.** The headword could not be joined to the book lemma without guessing. Listed in `data/unresolved.json`. Not a missing file. Not a translation failure. Not an open bug.
 
 ## The 23 translations
 
