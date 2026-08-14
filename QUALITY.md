@@ -1,6 +1,6 @@
 # Data quality
 
-Measured on this tree, 2026-08-14, after Pass A (fill holes, Japanese `See` / duplicated lists).
+Measured on this tree, 2026-08-14, after Pass A (holes / Japanese) and Pass B (English hyphen join + two wording repairs, replayed).
 
 This is a working digital edition, not a critical text. English and Gurmukhi are the columns to build on. The other 23 languages are machine text on the English spine.
 
@@ -32,8 +32,10 @@ Live reader: https://sikhi.io/dictionary
 - About 15,600 entries pack numbered senses (`1 … 2 …`) into one string.
 - 501 live entries have no Latin `tr`.
 - 680 entries are flagged in `corruption_flags.json` (broken See-refs, script junk).
+- Pass B joined **2,900** OCR line-break hyphens on **2,004** English entries (`ac- knowledged` → `acknowledged`, `caste- mark` → `caste-mark`). Meaning unchanged; translations were not replayed.
+- Two wording repairs were replayed through every language: `1-37-0` (`Skt 3 n` / `part wonderment`) and `3-58-21` (`Skt 2 n pony`). Spanish is now `maravilla, asombro`, not `parte de maravilla`.
 
-English is complete enough to search and to translate from. It still has OCR scars (`Skt 3 n`, `part wonderment`). Every other language inherits those scars.
+English is complete enough to search and to translate from. Residual scars remain (Devanagari in some See-refs, 4 empty defs). Every other language still inherits whatever English we have not yet touched.
 
 ## Gurmukhi body
 
