@@ -81,6 +81,10 @@ A small search UI is included: `cd site && npm install && npm run dev`.
 
 Open a pull request. Keep machine text labelled as machine text.
 
+## Contributors
+
+[Sikhi.io](https://sikhi.io) and [gurpreet-fe](https://github.com/gurpreet-fe).
+
 ## Licence
 
 CC BY 4.0 — see `LICENSE`. The 1930 Gurmukhi original is public domain. English follows the Patiala University edition.
