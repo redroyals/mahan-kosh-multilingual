@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState, useCallback, useRef } from "react";
 import type { ReactNode } from "react";
 import "./App.css";
+import { expandOriginTag } from "./mkOriginTags";
 
 type CoreEntry = { id: string; hw: string | null; tr: string | null; vol: number; page: number; sources: string[]; excluded?: boolean; exclude_reason?: string };
 type CoreData = { count: number; entries: CoreEntry[] };
@@ -882,10 +883,11 @@ export default function App() {
       // spellings from the definition itself.
       const variants = rec.align.endsWith("_grouped") ? splitGroupedVariants(rec.text) : null;
       const targets = seeTargetsForEntry(selected.id);
+      const body = expandOriginTag(variants ? variants.rest : rec.text, lang);
       return (
         <>
           {variants && <div className="also-written">Also written: {variants.prefix}</div>}
-          <p className="translated-text">{linkifyTargets(variants ? variants.rest : rec.text, targets)}</p>
+          <p className="translated-text">{linkifyTargets(body, targets)}</p>
         </>
       );
     }
