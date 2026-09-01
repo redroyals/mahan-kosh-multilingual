@@ -526,6 +526,14 @@ function ResultRow({
 export default function App() {
   const [core, setCore] = useState<CoreData | null>(null);
   const [manifest, setManifest] = useState<Manifest | null>(null);
+  // Duplicate-source note (2026-09-04): 16,178 of 64,218 live entries share
+  // their ENGLISH SOURCE definition text byte-for-byte with at least one
+  // other entry (e.g. several Sanskrit synonym-headwords for "sun" are all
+  // glossed identically). Computed once from en.json -- the shared source
+  // every language translates from -- not per-language, since a per-language
+  // recompute would just add translation non-determinism noise around the
+  // same underlying signal. See data/duplicate-siblings.json.
+  const [dupSiblings, setDupSiblings] = useState<Record<string, string[]> | null>(null);
   const [query, setQuery] = useState("");
   const [selected, setSelected] = useState<CoreEntry | null>(null);
   const [lang, setLang] = useState("en");
@@ -545,6 +553,10 @@ export default function App() {
       setManifest(m);
       setLoading(false);
     });
+    fetch("/duplicate-siblings.json")
+      .then((r) => r.json())
+      .then((d: { siblings?: Record<string, string[]> }) => setDupSiblings(d.siblings ?? null))
+      .catch(() => setDupSiblings(null));
   }, []);
 
   // Tracks in-flight fetches so the mount-effect and an explicit
@@ -651,6 +663,15 @@ export default function App() {
       const key = e.hw!.normalize("NFC").trim();
       if (!map.has(key)) map.set(key, e);
     }
+    return map;
+  }, [core]);
+
+  // Plain id -> entry lookup, for jumping to a duplicate-source sibling
+  // (see dupSiblings above) -- addressed by id, not by headword spelling.
+  const idLookup = useMemo(() => {
+    if (!core) return null;
+    const map = new Map<string, CoreEntry>();
+    for (const e of core.entries) map.set(e.id, e);
     return map;
   }, [core]);
 
@@ -1128,6 +1149,37 @@ export default function App() {
               </div>
 
               <div className="definition-box">{renderDefinition()}</div>
+
+              {(() => {
+                // Duplicate-source note. Shown regardless of `lang` -- the
+                // underlying fact (shared English source text) is the same
+                // no matter which translation is currently displayed.
+                const siblingIds = dupSiblings?.[selected.id];
+                if (!siblingIds?.length || !idLookup) return null;
+                const siblings = siblingIds
+                  .map((id) => idLookup.get(id))
+                  .filter((e): e is CoreEntry => !!e);
+                if (!siblings.length) return null;
+                return (
+                  <div className="dup-note">
+                    <span className="dup-note-label">
+                      {siblings.length === 1
+                        ? "This entry's original English source text is identical to 1 other headword:"
+                        : `This entry's original English source text is identical to ${siblings.length} other headwords:`}
+                    </span>
+                    <span className="dup-note-links">
+                      {siblings.map((e, i) => (
+                        <span key={e.id}>
+                          {i > 0 ? ", " : " "}
+                          <button type="button" className="dup-note-link" onClick={() => selectEntry(e)}>
+                            {e.hw}
+                          </button>
+                        </span>
+                      ))}
+                    </span>
+                  </div>
+                );
+              })()}
             </>
           )}
         </main>

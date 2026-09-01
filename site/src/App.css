@@ -388,6 +388,37 @@ body {
 
 .definitions li { margin-bottom: 0.6rem; }
 
+.dup-note {
+  margin-top: 1.4rem;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--gold);
+  font-family: system-ui, sans-serif;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  max-width: 60ch;
+}
+
+.dup-note-label {
+  color: var(--ink-soft);
+}
+
+.dup-note-links {
+  font-family: "Noto Sans Gurmukhi", sans-serif;
+}
+
+.dup-note-link {
+  font: inherit;
+  color: var(--gold);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.dup-note-link:hover { opacity: 0.75; }
+
 .hi-tr {
   color: var(--ink-soft);
   font-style: italic;
