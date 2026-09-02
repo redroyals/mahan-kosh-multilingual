@@ -253,6 +253,24 @@
       },
       "pipeline": "original-language body text",
       "note": "Original Gurmukhi dictionary prose for each entry (not a translation). Coverage is partial by design: 60196 of 64218 live entries (93.74%). Remaining entries disclose a missing body in the site UI."
+    },
+    "korean": {
+      "resolved_pct": 98.8,
+      "exact_plus_fuzzy_pct": 98.8,
+      "counts": {
+        "entry": 63447
+      },
+      "pipeline": "per-entry",
+      "note": "Fidelity-audited 2026-09 (150-sample, seeded, independent LLM grading against English source): 98.0% good / 2.0% bad. Bad-graded entries excluded."
+    },
+    "malay": {
+      "resolved_pct": 99.8,
+      "exact_plus_fuzzy_pct": 99.8,
+      "counts": {
+        "entry": 64079
+      },
+      "pipeline": "per-entry",
+      "note": "Fidelity-audited 2026-09 (150-sample, seeded, independent LLM grading against English source): 97.3% good / 0.7% suspect / 2.0% bad. Bad-graded entries excluded."
     }
   }
 }

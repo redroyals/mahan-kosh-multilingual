@@ -2,7 +2,7 @@
 
 Bhai Kahan Singh Nabha's *Gurushabad Ratnakar Mahan Kosh* (1930) — the great Sikh encyclopedia-dictionary — as plain JSON.
 
-**64,218 entries. 26 languages. One id shared across every language.**
+**64,218 entries. 28 languages. One id shared across every language.**
 
 Released by [Sikhi.io](https://sikhi.io) in honour of Guru Tegh Bahadur Ji's 350th sacrifice for the freedom of conscience.
 
@@ -16,9 +16,9 @@ Read it live: **https://sikhi.io/dictionary**
 | Gurmukhi body (original text) | 60,196 / 64,218 (93.7%) |
 | English | ~100% |
 | Hindi | 100% |
-| 23 other languages | ~100% each |
+| 25 other languages | ~97-100% each |
 
-The 23: Spanish, French, German, Portuguese, Italian, Chinese, Arabic, Urdu, Russian, Bengali, Gujarati, Tamil, Telugu, Persian, Japanese, Shahmukhi, Dutch, Polish, Swedish, Romanian, Czech, Hungarian, Danish.
+The 25: Spanish, French, German, Portuguese, Italian, Chinese, Arabic, Urdu, Russian, Bengali, Gujarati, Tamil, Telugu, Persian, Japanese, Shahmukhi, Dutch, Polish, Swedish, Romanian, Czech, Hungarian, Danish, Korean, Malay.
 
 English and Hindi are the careful spine. Everything past that is machine translation — useful for access, not a scholarly citation. Don't quote a machine translation as Bhai Kahan Singh's own words.
 
