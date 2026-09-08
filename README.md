@@ -90,3 +90,7 @@ Open a pull request. Keep machine text labelled as machine text.
 CC BY 4.0 — see `LICENSE`. The 1930 Gurmukhi original is public domain. English follows the Patiala University edition.
 
 Credit Bhai Kahan Singh Nabha. Credit [Sikhi.io](https://sikhi.io) if you use this packaging.
+
+## Source-linked reading aids
+
+A separate [Faridkot Teeka English reading dataset](data/reading-aids/faridkot/README.md) provides page-specific Punjabi evidence and hover explanations. It is not part of the Mahan Kosh dictionary entry grid. Only its English bindings have been model-reviewed; the linked notes describe the remaining multilingual work.
